@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/main.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Demo</title>
+</head>
+
+<body>
+  <div class="flex text-xl m-3">
+    <section class="chess">
+      <h2>Task 1. Chess board</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          Height: <input class="height" type="text" placeholder="From 1 to 100">
+        </label>
+        <label>
+          Width: <input class="width" type="text" placeholder="From 1 to 100">
+        </label>
+        <label>
+          Symbol: <input class="symbol" type="text" placeholder="One symbol">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="envelopes">
+      <h2>Task 2. Analyze envelopes</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          a: <input class="a" type="text" placeholder="From 1 to 999999">
+        </label>
+        <label>
+          b: <input class="b" type="text" placeholder="From 1 to 999999">
+        </label>
+        <label>
+          c: <input class="c" type="text" placeholder="From 1 to 999999">
+        </label>
+        <label>
+          d: <input class="d" type="text" placeholder="From 1 to 999999">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="triangles">
+      <h2>Task 3. Sort triangles</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          First: <input class="first" type="text" placeholder="ABC,2,2,3">
+        </label>
+        <label>
+          Second: <input class="second" type="text" placeholder="DEF,4,5,6">
+        </label>
+        <label>
+          Third: <input class="third" type="text" placeholder="GHI,7,8,9">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="palindrome">
+      <h2>Task 4. Check palindrome</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          Number: <input class="number" type="text" placeholder="From 11">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+
+    </section>
+
+    <section class="tickets">
+      <h2>Task 5. Happy tickets</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          Min: <input class="min" type="text" placeholder="From 0 to 999999">
+          Max: <input class="max" type="text" placeholder="From 0 to 999999">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="sequence">
+      <h2>Task 6. Numeric sequence</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          n: <input class="n" type="text" placeholder="From 1 to 99">
+          m: <input class="m" type="text" placeholder="Natural number">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="fibonacci">
+      <h2>Task 7. Fibonacci for range</h2>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Show inputs
+      </button>
+      <div class="inputs hidden">
+        <label>
+          Min, max: <input class="minmax" type="text" placeholder="Natural numbers">
+        </label>
+        <label>
+          Length: <input class="length" type="text" placeholder="From 1 to 999">
+        </label>
+        <button class="apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <section class="output w-5/12">
+      <h2>Output</h2>
+      <div class="output-area w-full p-1 h-48 border-solid border-2 border-gray-500 whitespace-pre overflow-auto"></div>
+    </section>
+  </div>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
